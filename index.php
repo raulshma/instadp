@@ -61,19 +61,10 @@ if(isset($_POST['name'])){
     $name = $_POST['name'];
     $json = file_get_contents("https://www.instagram.com/".$name."/?__a=1");
     if($json != null){
-    $jsonIterator = new RecursiveIteratorIterator(
-        new RecursiveArrayIterator(json_decode($json, TRUE)),
-        RecursiveIteratorIterator::SELF_FIRST);
-    
-    foreach ($jsonIterator as $key => $val) {
-        if($key="profile_pic_url") {
-            $url[]=$val;
-            $imageurl = $url[0]["profile_pic_url"];
-            $followers = $url[0]["followed_by"]["count"];
-            $fname = $url[0]["full_name"];
-            break;
-        }
-    }
+    $instajson = json_decode($json, TRUE);
+    $imageurl = $instajson['graphql']['user']['profile_pic_url'];
+    $followers = $instajson['graphql']['user']["edge_followed_by"]["count"];
+    $fname = $instajson['graphql']['user']["full_name"];
 $toreplace=["/s150x150","/vp"];
 $replaceby=["/s1080x1080",""];
 if (strpos($imageurl, '/s150x150') !== false) {
@@ -82,7 +73,7 @@ if (strpos($imageurl, '/s150x150') !== false) {
     $hdimage = $imageurl;
 }
 $followers = number_format($followers);
-echo '<a data-fancybox="gallery" href="'.$hdimage.'"><img src="'.$hdimage.'" alt="Something bad happened! Unable to load the image." width="60%" height="60%"></img></a>';
+echo '<a data-fancybox="gallery" href="'.$hdimage.'"><img src="'.$hdimage.'" alt="Something bad happened! Unable to load the image." width="50%" height="50%"></img></a>';
 echo "<br/>Full Name:<b> $fname</b>";
 echo "<br/>Followers:<b> $followers</b>";
 }else{
