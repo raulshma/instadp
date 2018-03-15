@@ -7,8 +7,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
     <title>Insta DP Download</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="raul">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="See and download anyones Instagram Display Picture for free in full size!">
+	<meta name="keywords" content="Instagram Profile Picture, InstaDP, instagram, display picture, display, picture, view, profile, picture">
+	<meta name="robots" content="index, follow">
+	<meta name="revisit-after" content="3 month">
 
     <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -23,18 +27,19 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
 
     <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js">
+    </script>
     <script src="js/custom.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
 
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="dist/images/favicon.png">
+    <link rel="icon" type="images/jpg" href="images/favicon.png">
 
 </head>
 
@@ -86,8 +91,10 @@
             </div>
         </nav>
         <div class="navbar-spacer"></div>
-        <div style="padding-top:20px;">
+        <div style="padding-top:10px;">
         <p>Ever wanted to see someone's Instagram profile picture in full size but didn't know how? Instadp is a free to use service that allows you to see anyone's Instagram's profile picture in full size. Works on any account - even private profiles! Bookmark our webpage to see Instagram Profile Pictures on your phone as well.
+        <p>This site is just a little project i did, to learn to use JSON in PHP.
+            If it does not work something might be changed in the json and will be fixed soon.</p>
         <form style="padding-top:10px;" action="index.php" method="post">
         <input type="text" name="name" placeholder="IG username" required/>
         <input class="button" value="Submit" type="submit"/> 
@@ -120,11 +127,11 @@ echo "<br/>Followers:<b> $followers</b>";
 }}
 ?>
     </div>
-    <div id="footer">
+    <!--<div id="footer">
         <div class="container">
     © Instadp 2018<br>
 We are not affiliated with or endorsed by Instagram.
 </div>
-    </div>
+    </div>-->
 </body>
 </html>
