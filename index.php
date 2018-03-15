@@ -31,15 +31,14 @@
 
     <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js">
     </script>
     <script src="js/custom.js"></script>
 
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="images/jpg" href="images/favicon.png">
+    <link rel="icon" type="images/jpg" href="images/favicon.jpg">
 
 </head>
 
@@ -92,9 +91,18 @@
         </nav>
         <div class="navbar-spacer"></div>
         <div style="padding-top:10px;">
-        <p>Ever wanted to see someone's Instagram profile picture in full size but didn't know how? Instadp is a free to use service that allows you to see anyone's Instagram's profile picture in full size. Works on any account - even private profiles! Bookmark our webpage to see Instagram Profile Pictures on your phone as well.
+<?php if(!isset($_POST['name'])){
+$a=<<<EOT
+                <p>Ever wanted to see someone's Instagram profile picture in full size but didn't know how? Instadp is a free to use service that allows you to see anyone's Instagram's profile picture in full size. Works on any account - even private profiles! Bookmark our webpage to see Instagram Profile Pictures on your phone as well.
         <p>This site is just a little project i did, to learn to use JSON in PHP.
             If it does not work something might be changed in the json and will be fixed soon.</p>
+EOT;
+echo $a;}
+else{
+    echo 'Cick the image to "zoom in" or "right click" and "save as" to "save/download".';
+}
+
+?>
         <form style="padding-top:10px;" action="index.php" method="post">
         <input type="text" name="name" placeholder="IG username" required/>
         <input class="button" value="Submit" type="submit"/> 
