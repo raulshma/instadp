@@ -11,6 +11,7 @@
 <meta name="description" content="See and download anyone Instagram Profile Picture for free in full size!">
 <meta name="keywords" content="Instagram Profile Picture, InstaDP, instagram, display picture, display, picture, view, profile, picture,anyone Instagram, picture in full size,account even private,anyone instagram profile,instadp">
 <meta name="robots" content="index, follow">
+<meta http-equiv="Cache-control" content="no-cache">
 <meta name="revisit-after" content="3 month">
 <meta name="theme-color" content="#3A3D3D"/>
 
@@ -36,6 +37,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js">
 </script>
+<script src="js/pace.js"></script>
 <script src="js/custom.js"></script>
 
 <!-- Favicon
