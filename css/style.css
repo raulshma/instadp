@@ -11,6 +11,7 @@ body {
   color: #323232 !important;
 }
 #foot {
+  margin-top:50px;
   position: fixed !important;
     left: 0 !important;
     bottom: 0 !important;
@@ -484,5 +485,11 @@ li.L5, li.L6, li.L7, li.L8
     -webkit-transform: perspective(140px) rotateY(180deg);
             transform: perspective(140px) rotateY(180deg);
     opacity: 0; 
+  }
+}
+
+@media (max-width: 768px) {
+  #foot{
+    display: none;
   }
 }
