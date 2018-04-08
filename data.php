@@ -18,7 +18,7 @@ $hdimage = $imageurl;
 $followers = number_format($followers);
 echo '<a data-fancybox="gallery" href="'.$hdimage.'"><img src="'.$hdimage.'" alt="Something bad happened! Unable to load the image." width="50%" height="50%"></img></a>';
 echo "<br/>Full Name:<b> $fname</b>";
-echo "<br/>Followers:<b> $followers</b>";
+echo "<br/>Followers:<b> $followers</b><hr/>";
 }else{
 echo "Username does not exist.";
 }}
