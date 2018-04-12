@@ -103,9 +103,7 @@
       </div>
       <footer id="foot">
          <div class="container">
-            © Instadp 2018
-            <br>
-            We are not affiliated with or endorsed by Instagram.
+            © Instadp 2018 | We are not affiliated with or endorsed by Instagram.
          </div>
       </footer>
       <!--Google Analytics -->
