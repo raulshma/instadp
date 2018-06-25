@@ -27,7 +27,7 @@ if($jsonget != null){
     $fname = $instajsonget['user']["full_name"];
     echo '<a data-fancybox="gallery" href="'.$hdimage.'"><img src="'.$hdimage.'" alt="Something bad happened! Unable to load the image." width="65%" height="65%"></img></a>';
     echo "<br/>Full Name:<b> $fname</b>";
-    echo "<br/>Followers:<b> $followers</b><hr/>";
+    echo '<br/>Followers:<b> '.$followers.'</b><hr style="padding:0;margin:10px 0px;">';
 }else{
 echo "Username does not exist or server busy <br/>.";
 }

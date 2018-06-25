@@ -32,7 +32,7 @@
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/skeleton.css">
       <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
       <!-- Scripts
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <!-- Favicon
@@ -81,9 +81,9 @@
          <div class="navbar-spacer">
          </div>
          <div class="container">
-            <form style="padding-top:10px;" method="post">
-               <input id="name" type="text" name="uname" placeholder="IG username" required autofocus />
-               <input id="submit" class="button" name="Submit" value="Submit" type="button" />
+            <form id="fPic" style="padding-top:20px;margin-bottom:0px;" method="post">
+               <input id="name" type="text" name="uname" placeholder="IG username" required autofocus/>
+               <input id="submit" class="button-primary" name="Submit" value="Submit" type="submit"/>
             </form>
             <div class="sk-folding-cube loading">
                <div class="sk-cube1 sk-cube"></div>
@@ -92,25 +92,30 @@
                <div class="sk-cube3 sk-cube"></div>
             </div>
             <div class="container" id="response"></div>
-            <p>
+            <p style="margin-bottom:0px;color: #323232;">
                Ever wanted to see someone's Instagram profile picture in 
                full size but didn't know how? Instadp is a free to use service 
                that allows you to see anyone's Instagram's profile picture in full size. Works on any account 
                - even private profiles! Bookmark our webpage to see 
                Instagram Profile Pictures on your phone as well.
-               <br/><strong>Updated: 13 April 2018</strong>
             </p>
          </div>
+         <button style="margin-top: 15px; font-size: 0.5em;" class="accordion">Changelogs</button>
+            <div class="panel">
+                <code><strong>Feb 24 2018:</strong> Site launched.</code><br/>
+                <code><strong>April 28 2018:</strong> Updated to work with lastest Instagram changes.</code><br/>
+                <code><strong>June 26 2018:</strong> Fixed where pressing enter on searchbox was making the page to reload.</code>
+            </div>
       </div>
-      <footer id="foot">
-         <div class="container">
+<!--       <footer id="foot">
+         <div>
             © Instadp 2018 | Not affiliated with or endorsed by Instagram.
          </div>
-      </footer>
+      </footer> -->
       <!--Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116092546-1"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
       <script src="js/pace.js"></script>
       <script src="js/custom.js"></script>
    </body>
