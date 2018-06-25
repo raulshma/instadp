@@ -4,19 +4,19 @@
       <!-- Basic Page Needs
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <meta charset="utf-8">
-      <title>Instagram DP Download</title>
+      <title>Instagram DP Download - Instadp</title>
       <meta name="author" content="raul">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <link rel='dns-prefetch' href='//fonts.googleapis.com' />
       <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
       <link rel='dns-prefetch' href='//ajax.googleapis.com' />
-      <meta name="description" content="See and download anyone Instagram Profile Picture for free in full size">
+      <meta name="description" content="See and download anyone Instagram Profile Picture for free in full size, no login no registration no survey, just enter the username and get the profile picture of the user in just one click for free.">
       <meta name="keywords" content="Instagram Profile Picture, InstaDP, instagram, display picture, display, picture, view, profile, picture,anyone Instagram, picture in full size,account even private,anyone instagram profile,instadp">
       <meta property="og:title" content="Instagram DP Download" />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="http://instadp.ml/" />
       <meta property="og:image" content="http://instadp.ml/images/screen.png" />
-      <meta property="og:description" content="See and download anyone Instagram Profile Picture for free in full size" /> 
+      <meta property="og:description" content="See and download anyone Instagram Profile Picture for free in full size, no login no registration no survey, just enter the username and get the profile picture of the user in just one click for free." /> 
       <meta property="og:site_name" content="Instagram DP Download" />
       <meta name="robots" content="index, follow">
       <meta name="revisit-after" content="1 month">
@@ -82,8 +82,8 @@
          </div>
          <div class="container">
             <form style="padding-top:10px;" method="post">
-               <input id="name" type="text" name="uname" placeholder="IG username" required autofocus/>
-               <input id="submit" class="button" name="Submit" value="Submit" type="button"/>
+               <input id="name" type="text" name="uname" placeholder="IG username" required autofocus />
+               <input id="submit" class="button" name="Submit" value="Submit" type="button" />
             </form>
             <div class="sk-folding-cube loading">
                <div class="sk-cube1 sk-cube"></div>
@@ -98,12 +98,13 @@
                that allows you to see anyone's Instagram's profile picture in full size. Works on any account 
                - even private profiles! Bookmark our webpage to see 
                Instagram Profile Pictures on your phone as well.
+               <br/><strong>Updated: 13 April 2018</strong>
             </p>
          </div>
       </div>
       <footer id="foot">
          <div class="container">
-            © Instadp 2018 | We are not affiliated with or endorsed by Instagram.
+            © Instadp 2018 | Not affiliated with or endorsed by Instagram.
          </div>
       </footer>
       <!--Google Analytics -->
