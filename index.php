@@ -38,23 +38,18 @@
       <!-- Favicon
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <link rel="icon" type="images/jpg" href="images/favicon.png">
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'UA-116092546-1');
-      </script>
       <!-- Favicon
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <link rel="icon" type="images/jpg" href="images/favicon.png">
    </head>
-   <body class="code-snippets-visible">
+   <body>
+<!--    <div class="landscape"></div>
+<div class="filter"></div> -->
       <!-- Primary Page Layout
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
          <div class="container" style="text-align:center;">
          <section style="text-align: center;">
-            <h1 class="title"><a class="notdec" href="index.php">Instadp</a>
+            <h1 style="margin-bottom:5px;" class="title"><a class="notdec" href="index.php">Instadp</a>
             </h1>
          </section>
          <div class="navbar-spacer">
@@ -80,9 +75,9 @@
          </nav>
          <div class="navbar-spacer">
          </div>
-         <div class="container">
+         <div class="container1">
             <form id="fPic" style="padding-top:20px;margin-bottom:0px;" method="post">
-               <input id="name" type="text" name="uname" placeholder="IG username" required autofocus/>
+               <input style="margin-bottom:3px;" id="name" type="text" name="uname" placeholder="IG username" required autofocus/><br/>
                <input id="submit" class="button-primary" name="Submit" value="Submit" type="submit"/>
             </form>
             <div class="sk-folding-cube loading">
@@ -91,7 +86,7 @@
                <div class="sk-cube4 sk-cube"></div>
                <div class="sk-cube3 sk-cube"></div>
             </div>
-            <div class="container" id="response"></div>
+            <div class="container1" id="response"></div>
             <p style="margin-bottom:0px;color: #323232;">
                Ever wanted to see someone's Instagram profile picture in 
                full size but didn't know how? Instadp is a free to use service 
@@ -103,8 +98,9 @@
          <button style="margin-top: 15px; font-size: 0.5em;" class="accordion">Changelogs</button>
             <div class="panel">
                 <code><strong>Feb 24 2018:</strong> Site launched.</code><br/>
-                <code><strong>April 28 2018:</strong> Updated to work with lastest Instagram changes.</code><br/>
-                <code><strong>June 26 2018:</strong> Fixed where pressing enter on searchbox was making the page to reload.</code>
+                <code><strong>April 28 2018:</strong> Fetch Code Update.</code><br/>
+                <code><strong>June 26 2018:</strong> Enter reload fix.</code></br>
+                <code><strong>June 27 2018:</strong> Visual Tweaks.</code>
             </div>
       </div>
 <!--       <footer id="foot">
@@ -113,7 +109,6 @@
          </div>
       </footer> -->
       <!--Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116092546-1"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
       <script src="js/pace.js"></script>

@@ -2,7 +2,9 @@ body {
     margin: 0;
     padding: 0;
     height: 100% !important;
-    background-color: #ffffff
+    background: url(../images/background.png);
+    background-repeat: repeat;
+    background-size: 5vh;
 }
 
 .panel {
@@ -10,7 +12,7 @@ body {
     max-height: 0;
     color: #323232;
     overflow: hidden;
-    transition: max-height 1s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .loading {
@@ -43,8 +45,19 @@ body {
 
 .container {
     max-width: 800px;
+    padding: 0px 25px;
     min-height: 100% !important;
     position: relative;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.container1 {
+    max-width: 800px;
+    margin:0;
+    padding: 0;
+    min-height: 100% !important;
+    position: relative;
+    background-color: rgba(255,255,255,0.8);
 }
 
 .center-text {
