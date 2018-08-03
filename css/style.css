@@ -1,10 +1,28 @@
+html{
+    padding:0;
+    margin:0;
+    min-height: 100%;
+    max-width: 100%;
+}
 body {
     margin: 0;
     padding: 0;
     height: 100% !important;
-    background: url(../images/background.png);
-    background-repeat: repeat;
-    background-size: 5vh;
+/*     background-color: #8EC5FC; */
+/*     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+}
+
+#sitestat{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#sitestat span{
+    background-color: white;
+    padding: 1rem 4rem;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
 }
 
 .panel {
@@ -21,7 +39,7 @@ body {
 
 .notdec {
     text-decoration: none !important;
-    color: #323232 !important
+    color: #323232 !important;
 }
 
 #foot {
@@ -48,7 +66,9 @@ body {
     padding: 0px 25px;
     min-height: 100% !important;
     position: relative;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgb(255,255,255);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 .container1 {
@@ -57,7 +77,7 @@ body {
     padding: 0;
     min-height: 100% !important;
     position: relative;
-    background-color: rgba(255,255,255,0.8);
+    background-color: inherit;
 }
 
 .center-text {
@@ -360,3 +380,42 @@ mark {
     background-color: #464646b6;
     color: #fefefe;
 }
+
+.greendot{
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 25%;
+    background-color: #589613;
+}
+
+.reddot{
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 25%;
+    background-color: #e5004f;
+}
+
+.color-change-2x {
+	-webkit-animation: color-change-2x 5s ease-in-out infinite alternate both;
+	        animation: color-change-2x 5s ease-in-out infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+    0% {
+        background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    }
+    100% {
+        background: linear-gradient(62deg, #E0C3FC 0%, #8EC5FC 100%);
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+        background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    }
+    100% {
+        background: linear-gradient(62deg, #E0C3FC 0%, #8EC5FC 100%);
+    }
+  }
+  
