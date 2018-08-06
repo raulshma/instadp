@@ -13,7 +13,7 @@ if(isset($_REQUEST['uname'])){
 $name = $_REQUEST['uname'];
 $doc = new DOMDocument();
 //using codeofninja instagram id finder and fetching the id
-$doc->loadHTML(file_get_contents("https://codeofaninja.com/tools/find-instagram-id-answer.php?instagram_username=".$name));
+if($doc->loadHTML(file_get_contents("https://codeofaninja.com/tools/find-instagram-id-answer.php?instagram_username=".$name))){
 $xpath = new DOMXPath($doc);
 $userid = $xpath->query('/html/body/div[1]/div[2]/div[1]/b')->item(0)->nodeValue;
 //using the user id to get the json with the image url
@@ -31,7 +31,10 @@ if($jsonget != null){
     echo '<br/>Followers:<b> '.$followers.'</b>';
     echo '<br/><a style="text-decoration: none !important; color:#323232 !important;" href="'.$hdimage.'" download><small>Download</small></a><hr style="padding:0;margin:10px 0px;">';
 }else{
-echo "Username does not exist or server busy <br/>.";
+echo "Username does not exist.<br/>.";
+}
+}else{
+echo "Server Busy.<br/>"; 
 }
 /* Calling logging function and storing Username searched and data/time
 if(isset($_POST['uname']))  {
