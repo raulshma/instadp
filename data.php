@@ -12,10 +12,12 @@ function myfputcsv($handle, $array, $delimiter = ',', $enclosure = '"', $eol = "
 if(isset($_REQUEST['uname'])){
 $name = $_REQUEST['uname'];
 $doc = new DOMDocument();
-//using codeofninja instagram id finder and fetching the id
-if($doc->loadHTML(file_get_contents("https://codeofaninja.com/tools/find-instagram-id-answer.php?instagram_username=".$name))){
-$xpath = new DOMXPath($doc);
-$userid = $xpath->query('/html/body/div[1]/div[2]/div[1]/b')->item(0)->nodeValue;
+//using instagram json data
+$url = file_get_contents("http://instagram.com/$name/");
+$json = '/sharedData\s=\s(.*[^\"]);<.script>/ixU';
+preg_match_all($json, $url, $jsondata, PREG_SET_ORDER, 0);
+$array = json_decode($jsondata[0][1], true);
+$userid  = $array['entry_data']['ProfilePage']['0']['graphql']['user']['id'];
 //using the user id to get the json with the image url
 $jsonget = file_get_contents("https://i.instagram.com/api/v1/users/". $userid ."/info");
 }
@@ -32,9 +34,6 @@ if($jsonget != null){
     echo '<br/><a style="text-decoration: none !important; color:#323232 !important;" href="'.$hdimage.'" download><small>Download</small></a><hr style="padding:0;margin:10px 0px;">';
 }else{
 echo "Username does not exist.<br/>.";
-}
-}else{
-echo "Server Busy.<br/>"; 
 }
 /* Calling logging function and storing Username searched and data/time
 if(isset($_POST['uname']))  {
